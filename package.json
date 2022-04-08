@@ -1,0 +1,38 @@
+{
+  "name": "planets-fact-site",
+  "version": "1.0.0",
+  "description": "website to explore the solar system",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jason-Donmoyer/Planets-Facts-Site.git"
+  },
+  "keywords": [
+    "planets",
+    "nasa",
+    "space",
+    "solar-system"
+  ],
+  "author": "Jason Donmoyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jason-Donmoyer/Planets-Facts-Site/issues"
+  },
+  "homepage": "https://github.com/Jason-Donmoyer/Planets-Facts-Site#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  }
+}
