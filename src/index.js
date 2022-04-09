@@ -16,7 +16,7 @@ const data = [];
 
 app.use(cors());
 // app.use(express.static('public'));
-
+app.use(express.static(path.join(__dirname, '/')));
 
 // Get data from API
 fetch('https://jason-donmoyer.github.io/JSON-Files/planet-data.json')
@@ -24,12 +24,22 @@ fetch('https://jason-donmoyer.github.io/JSON-Files/planet-data.json')
   .then(planets => {
     // console.log(planets[4].name);
     for (let i in planets) {
-      console.log(planets[i].name);
+      // console.log(planets[i].name);
+      data.push(planets[i]);
     }
+  })
+  .catch(err => {
+    console.log(err);
   });
 
 
+
+
 // ROUTES
+
+app.get('/data', (req, res) => {
+  res.send(data);
+})
 
 router.get('/', (req,res) => {
   res.sendFile(path.join(__dirname+'/public/index.html'));
