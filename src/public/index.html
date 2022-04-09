@@ -10,16 +10,56 @@
   <title>Frontend Mentor | Planets fact site</title>
 </head>
 <body>
-  Mercury
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <h2 class="nav-title">PLANETS</h2>
+    <div id="hamburger-menu" class="hamburger-menu"></div>
+  </nav>
+
+  <!-- Main -->
+  <main class="main-content">
+
+    <div class="fact-selection-btn-container">
+      <div class="selection-btn">
+        <h4 class="selection-btn-copy">Overview</h4>
+        <div id="overview-selection-marker" class="selection-marker marker-active"></div>
+      </div>
+      <div class="selection-btn">
+        <h4 class="selection-btn-copy">Internal Structure</h4>
+        <div id="structure-selection-marker" class="selection-marker"></div>
+      </div>
+      <div class="selection-btn">
+        <h4 class="selection-btn-copy">Surface Geology</h4>
+        <div id="geology-selection-marker" class="selection-marker"></div>
+      </div>
+    </div>
+
+    <!-- Main Image -->
+    <div id="planet-mercury-img" class="planet-img"></div>
+
+    <!-- Plnet Information -->
+    <article class="planet-overview">
+      <h1 class="main-headline">Mercury</h1>
+      <p class="planet-overview-copy">Mercury is the smallest planet in the Solar System and the closest 
+        to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
+        shortest of all the Sun's planets. Mercury is one of four terrestrial 
+        planets in the Solar System, and is a rocky body like Earth.</p>
+        <div class="planet-overview-src-container">
+          <p class="overview-src-copy">Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) --></p>
+          <div class="arrow-icon"></div>
+        </div>
+    </article>
+
+  </main>
+
+  
 
   <!-- Overview Content Start -->
 
-  Mercury is the smallest planet in the Solar System and the closest 
-  to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
-  shortest of all the Sun's planets. Mercury is one of four terrestrial 
-  planets in the Solar System, and is a rocky body like Earth.
+  
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) -->
+  
 
   <!-- Overview Content End -->
 
@@ -45,9 +85,9 @@
 
   <!-- Surface Geology Content End -->
 
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
+
+
+  
 
   Rotation Time
   58.6 Days

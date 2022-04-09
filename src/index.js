@@ -76,5 +76,5 @@ router.get('/neptune', (req,res) => {
 
 app.use('/', router);
 app.listen(3000, () => {
-  console.log(`App is cocked, locked and READY TO ROCK! on port ${process.env.PORT}`);
+  console.log(`Server is up and running on port ${process.env.PORT}`);
 });
