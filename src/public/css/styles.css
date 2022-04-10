@@ -1,3 +1,142 @@
-.navigation-btns-container {
+/*******************************/
+          /* IMPORTS */
+/*******************************/
+
+
+/* FONTS */
+
+/* Antonio medium: 500 */
+/* Spartan regular: 400 */
+/* Spartan bold: 700 */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap');
+
+/* font-family: 'Antonio', sans-serif;
+font-family: 'Spartan', sans-serif; */
+
+
+/*******************************/
+         /* VARIABLES */
+/*******************************/
+
+
+:root {
+
+
+/* COLORS */
+--white: #fff;
+--dark-blackish-blue: #070724;
+--dark-gray: #38384F;
+--light-gray: #838391;
+--cyan: #419EBB;
+--gold: #EDA249;
+--purple: #6F2ED6;
+--dark-reddish-orange: #D14C32;
+--red: #D83A34;
+--dark-orange: #CD5120;
+--sea-green: #1EC284;
+--blue: #2D68F0;
+
+
+/* FONTS */
+
+
+/* Font Families */
+--antonio: 'Antonio', sans-serif;
+--spartan: 'Spartan', sans-serif;
+
+
+/* Font Weights */
+--fw-regular: 400;
+--fw-medium: 500;
+--fw-bold: 700;
+
+
+}
+
+
+/*******************************/
+        /* MAIN STYLES */
+/*******************************/
+
+
+/* MOBILE */
+
+
+/* html */
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* body */
+.main-container {
+  background-color: var(--dark-blackish-blue);
+  color: var(--white);
+  font-family: var(--spartan);
+  font-weight: var(--fw-regular);
+}
+
+
+/* Nav */
+.main-nav {
+  height: 2.25rem;
+  margin: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* Nav h2 */
+.nav-title {
+  font-family: var(--antonio);
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.065625rem;
+}
+
+
+/* Hamburger Menu */
+.hamburger-menu {
+  height: 1.0625rem;
+  width: 1.5rem;
+  background-image: url(../../public/assets/icon-hamburger.svg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-btns-container {
   display: none;
 }
