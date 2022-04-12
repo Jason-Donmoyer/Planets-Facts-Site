@@ -83,17 +83,27 @@ html {
 
 /* Nav */
 .main-nav {
-  height: 2.25rem;
-  margin: 1rem 1.5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
+
 
 /* Navbar */
 .navbar {
+  height: 2.25rem;
+  margin: 1rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+
+/* Nav Horizontal Line */
+.nav-horizontal-line {
+  height: 0.0625rem;
+  background-color: var(--white);
+  mix-blend-mode: normal;
+  opacity: 0.2;
 }
 
 
@@ -112,6 +122,124 @@ html {
   width: 1.5rem;
   background-image: url(../../public/assets/icon-hamburger.svg);
 }
+
+
+/* NAV BTNS */
+
+
+/* Nav buttons container */
+.nav-btns-container {
+  /* width: 100%; */
+  margin: 1.5rem 1.5rem auto 1.5rem;
+}
+
+
+/* Nav Btn Container */
+.nav-btn-container {
+  height: 1.5625rem;
+  width: 100%;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Nav Info Container*/
+.nav-btn-info-container {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Planet Color Container */
+.planet-color-container {
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 50%;
+  margin-right: 1.5625rem;
+}
+
+
+/* Nav Button Copy */
+.nav-btn-copy {
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.0852275rem;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+
+/* ****************** */
+/* PLANET COLORS */
+
+
+/* Mercury */
+.mercury-color-container {
+  background-color: #DEF4FC;
+}
+
+
+/* Venus */
+.venus-color-container {
+  background-color: #F7CC7F;
+}
+
+
+/* Earth */
+.earth-color-container {
+  background-color: #545BFE;
+}
+
+
+/* Mars */
+.mars-color-container {
+  background-color: #FF6A45;;
+}
+
+
+/* Jupiter */
+.jupiter-color-container {
+  background-color: #ECAD7A;
+}
+
+
+/* Saturn */
+.saturn-color-container {
+  background-color: #FCCB6B;
+}
+
+
+/* Uranus */
+.uranus-color-container {
+  background-color: #65F0D5;
+}
+
+
+/* Neptune */
+.neptune-color-container {
+  background-color: #497EFA;
+}
+
+
+/* ****************** */
+
+
+/* Chevron Icon */
+.chevron-icon {
+  height: 0.5rem;
+  width: 0.25rem;
+  margin-right: 0.5rem;
+  background-image: url(../../public/assets/icon-chevron.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+
 
 
 
