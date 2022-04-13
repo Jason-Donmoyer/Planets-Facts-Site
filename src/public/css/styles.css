@@ -131,6 +131,7 @@ html {
 .nav-btns-container {
   /* width: 100%; */
   margin: 1.5rem 1.5rem auto 1.5rem;
+  display: none;
 }
 
 
@@ -178,7 +179,7 @@ html {
 
 /* Mercury */
 .mercury-color-container {
-  background-color: #DEF4FC;
+  background-color: var(--cyan);
 }
 
 
@@ -238,33 +239,89 @@ html {
 }
 
 
+/* MAIN CONTENT */
 
 
+/* main */
+/* .main-content {
+  
+} */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.nav-btns-container {
-  display: none;
+/* Fact Selection Buttons Container */
+.fact-selection-btns-container {
+  height : 3.125rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
+
+/* Selction Button */
+.selection-btn {
+  height: 1.9375rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* Selection Button Copy */
+.selection-btn-copy {
+  font-size: 0.5625rem;
+  line-height: 0.625rem;
+  letter-spacing: 0.120536rem;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+/* Selection Marker */
+.selection-marker {
+  height: 0.25rem;
+}
+
+
+/* Overview Marker */
+.overview-marker-color{
+  background-color: var(--cyan);
+} 
+
+
+/* Structure Marker */
+.structure-marker-color{
+  background-color: var();
+}
+
+
+/* Surface Marker */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -75,6 +75,6 @@ router.get('/neptune', (req,res) => {
 
 
 app.use('/', router);
-app.listen(3000, () => {
-  console.log(`Server is up and running on port ${process.env.PORT}`);
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Server is up and running on port ${process.env.PORT || 3000}`);
 });
