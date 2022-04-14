@@ -285,19 +285,50 @@ html {
 }
 
 
-/* Overview Marker */
-.overview-marker-color{
-  background-color: var(--cyan);
-} 
-
-
-/* Structure Marker */
-.structure-marker-color{
-  background-color: var();
+/* Planet Image Container */
+.planet-img-container {
+  height: 19rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
-/* Surface Marker */
+/* Planet Image */
+.planet-img {
+  height: 6.9375rem;
+  width: 6.9375rem;
+  background-size: contain;
+}
+
+/* REMOVE */
+/* Mercury Img */
+.mercury-img {
+  background-image: url(../../public/assets/planet-mercury.svg);
+}
+
+
+/* Planet Info Container */
+.planet-info-container {
+  height: 14.6875rem;
+}
+
+
+/* PLANET OVERVIEW */
+
+
+/* PLANET STRUCTURE */
+.planet-structure-copy, 
+.planet-structure-src-container{
+  display: none;
+}
+
+
+/* PLANET SURFACE */
+.planet-surface-copy, 
+.planet-surface-source-container{
+  display: none;
+}
 
 
 
