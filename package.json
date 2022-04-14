@@ -2,7 +2,7 @@
   "name": "planets-fact-site",
   "version": "1.0.0",
   "description": "website to explore the solar system",
-  "main": "index.js",
+  "main": "src/public/index.js",
   "scripts": {
     "start": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -35,5 +35,8 @@
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "node-fetch": "^3.2.3"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
