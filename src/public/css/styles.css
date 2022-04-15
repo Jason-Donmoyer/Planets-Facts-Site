@@ -395,6 +395,7 @@ html {
 /* Planet Stats Container */
 .planet-stats-container {
   height: 13.5rem;
+  margin-top: 1.75rem;
   margin-right: 1.5rem;
   margin-left: 1.5rem;
   display: flex;
