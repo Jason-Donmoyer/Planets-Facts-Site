@@ -75,6 +75,9 @@ html {
 /* body */
 .main-container {
   background-color: var(--dark-blackish-blue);
+  background-image: url(../../public/assets/background-stars.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--white);
   font-family: var(--spartan);
   font-weight: var(--fw-regular);
@@ -386,6 +389,50 @@ html {
 #planet-surface-copy, 
 #planet-surface-src-container{
   display: none;
+}
+
+
+/* Planet Stats Container */
+.planet-stats-container {
+  height: 13.5rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* Stat Container */
+.stat-container {
+  height: 3rem;
+  padding: 0.5625rem 1.5rem 0.8125rem 1.5rem;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* Stat Headline */
+.stat-headline {
+  font-size: 0.5rem;
+  line-height: 1rem;
+  letter-spacing: 0.000454rem;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+
+/* Stat Copy */
+.stat-copy {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.046875rem;
+  text-align: right;
+  text-transform: uppercase;
 }
 
 
