@@ -88,11 +88,10 @@ async function getData() {
     }
     // let planetNumber = 0;
     console.log(planetData[planetNumber].overview.content);
-    localStorage.setItem('planetData', planetData);
   });
 }
 
 getData();
-localStorage.getItem('planetData');
+
 
 
