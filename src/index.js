@@ -37,7 +37,7 @@ fetch('https://jason-donmoyer.github.io/JSON-Files/planet-data.json')
 
 // ROUTES
 
-app.get('/data', (req, res) => {
+router.get('/data', (req, res) => {
   res.send(data);
 })
 
