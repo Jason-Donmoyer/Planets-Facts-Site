@@ -4,60 +4,197 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../public/assets/favicon-32x32.png">
+  <link rel="stylesheet" href="../public/css/reset.css">
+  <link rel="stylesheet" href="../public/css/styles.css">
   
   <title>Frontend Mentor | Planets fact site</title>
 </head>
-<body>
-  Saturn
+<body class="main-container">
 
-  <!-- Overview Content Start -->
+  <!-- Navigation Start -->
+  <nav class="main-nav">
+    <div class="navbar">
+      <h2 class="nav-title">THE PLANETS</h2>
+      <div id="hamburger-menu" class="hamburger-menu"></div>
+     
+    </div>
 
-  Saturn is the sixth planet from the Sun and the second-largest in the Solar 
-  System, after Jupiter. It is a gas giant with an average radius of about 
-  nine and a half times that of Earth. It only has one-eighth the average 
-  density of Earth.
+    <div class="nav-horizontal-line"></div>
+    
+ 
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn -->
+   <!-- Navigation Menu Start -->
+   <div id="nav-btns-container" class="nav-btns-container">
+     <div id="mercury-nav-btn" class="nav-btn-container">
+       <div class="nav-btn-info-container">
+        <div id="mercury-color-container" class="planet-color-container mercury-color-container"></div>
+        <p class="nav-btn-copy">Mercury</p>
+       </div>
+       <div class="chevron-icon"></div>
+     </div>
+     <div class="nav-horizontal-line"></div>
+     <div id="venus-nav-btn" class="nav-btn-container">
+       <div class="nav-btn-info-container">
+        <div id="venus-color-container" class="planet-color-container venus-color-container"></div>
+        <p class="nav-btn-copy">Venus</p>
+       </div>
+        <div class="chevron-icon"></div>
+     </div>
+     <div class="nav-horizontal-line"></div>
+     <div id="earth-nav-btn" class="nav-btn-container">
+       <div class="nav-btn-info-container">
+        <div id="earth-color-container" class="planet-color-container earth-color-container"></div>
+        <p class="nav-btn-copy">Earth</p>
+       </div>
+        <div class="chevron-icon"></div>
+     </div>
+     <div class="nav-horizontal-line"></div>
+     <div id="mars-nav-btn" class="nav-btn-container">
+       <div class="nav-btn-info-container">
+        <div id="mars-color-container" class="planet-color-container mars-color-container"></div>
+        <p class="nav-btn-copy">Mars</p>
+       </div> 
+        <div class="chevron-icon"></div>
+     </div>
+     <div class="nav-horizontal-line"></div>
+     <div id="jupiter-nav-btn" class="nav-btn-container">
+       <div class="nav-btn-info-container">
+        <div id="jupiter-color-container" class="planet-color-container jupiter-color-container"></div>
+        <p class="nav-btn-copy">Jupiter</p>
+       </div>
+        <div class="chevron-icon"></div>
+     </div>
+     <div class="nav-horizontal-line"></div>
+     <div id="saturn-nav-btn" class="nav-btn-container">
+       <div class="nav-btn-info-container">
+        <div id="saturn-color-container" class="planet-color-container saturn-color-container"></div>
+        <p class="nav-btn-copy">Saturn</p>
+       </div> 
+        <div class="chevron-icon"></div>
+     </div>
+     <div class="nav-horizontal-line"></div>
+     <div id="uranus-nav-btn" class="nav-btn-container">
+       <div class="nav-btn-info-container">
+        <div id="uranus-color-container" class="planet-color-container uranus-color-container"></div>
+        <p class="nav-btn-copy">Uranus</p>
+       </div> 
+        <div class="chevron-icon"></div>
+     </div>
+     <div class="nav-horizontal-line"></div>
+     <div id="neptune-nav-btn" class="nav-btn-container">
+       <div class="nav-btn-info-container">
+        <div id="neptune-color-container" class="planet-color-container neptune-color-container"></div>
+        <p class="nav-btn-copy">Neptune</p>
+       </div> 
+        <div class="chevron-icon"></div>
+     </div>
+   </div>
+   <!-- Navigation Menu End -->
+  </nav>
+  <!-- Navigation End -->
 
-  <!-- Overview Content End -->
+  <!-- Main -->
+  <main id="main-content" class="main-content">
 
-  <!-- Internal Structure Content Start -->
+    <!-- Fact Selection Buttons Container Start -->
+    <div class="fact-selection-btns-container">
+      <div class="selection-btn">
+        <h3 class="selection-btn-copy">Overview</h3>
+        <div id="overview-selection-marker" class="selection-marker mercury-color-container marker-active"></div>
+      </div>
+      <div class="selection-btn">
+        <h3 class="selection-btn-copy">Structure</h3>
+        <div id="structure-selection-marker" class="selection-marker"></div>
+      </div>
+      <div class="selection-btn">
+        <h3 class="selection-btn-copy">Surface</h3>
+        <div id="geology-selection-marker" class="selection-marker"></div>
+      </div>
+    </div>
+    <div class="nav-horizontal-line"></div>
+    <!-- Fact Selection Buttons Container SEnd -->
 
-  Despite consisting mostly of hydrogen and helium, most of Saturn's mass 
-  is not in the gas phase, because hydrogen becomes a non-ideal liquid 
-  when the density is above 0.01 g/cm3, which is reached at a radius 
-  containing 99.9% of Saturn's mass.
+    <!-- Main Image Start -->
+    <div class="planet-img-container">
+      <div id="planet-mercury-img" class="planet-img mercury-img"></div>
+    </div>
+    <!-- Main Image End -->
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Internal_structure -->
+    <!-- Planet Information Start -->
+    <article class="planet-info-container">
+      <h1 class="main-headline">Mercury</h1>
 
-  <!-- Internal Structure Content End -->
+      <!-- Overview Content Start -->
+      <p id="planet-overview-copy" class="planet-info-copy">Mercury is the smallest planet in the Solar System and the  closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
+      shortest of all the Sun's planets. Mercury is one of four terrestrial 
+      planets in the Solar System, and is a rocky body like Earth.</p>
+      <div id="planet-overview-src-container" class="planet-src-container">
+        <p id="overview-src-copy" class="src-copy">Source : <a href="https://en.wikipedia.org/wiki/Mercury_(mercury)" target="_blank">Wikipedia</a> <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) --></p>
+        <div class="arrow-icon"></div>
+      </div>
+      <!-- Overview Content End -->
 
-  <!-- Surface Geology Content Start -->
+      <!-- Internal Structure Content Start -->
+      <p id="planet-structure-copy" class="planet-info-copy">Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and 
+      a solid inner core. The planet's density is the second highest in the 
+      Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
+      </p>
+        <div id="planet-structure-src-container" class="planet-src-container">
+          <p id="structure-src-copy" class="src-copy"></p>Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure --></p>
+          <div class="arrow-icon"></div>
+        </div>
+        <!-- Internal Structure Content End -->
 
-  The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% 
-  helium by volume. The planet's most famous feature is its prominent ring 
-  system, which is composed mostly of ice particles with a smaller amount 
-  of rocky debris and dust. 
+        <!-- Surface Geology Content Start -->
+        <p id="planet-surface-copy" class="planet-info-copy">Mercury's surface is similar in appearance to that of the   Moon, showing extensive mare-like plains and heavy cratering, indicating that it has 
+        been geologically inactive for billions of years. It is more heterogeneous 
+        than either Mars's or the Moon’s.</p>
+        <div id="planet-surface-src-container" class="planet-src-container">
+          <p id="surface-src-copy" class="src-copy">Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology --></p>
+          <div class="arrow-icon"></div>
+        </div>
+        <!-- Surface Geology Content End -->
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Atmosphere -->
+    </article>
+    <!-- Planet Information End -->
 
-  <!-- Surface Geology Content End -->
+    <!-- Planet Stats Start -->
+    <article class="planet-stats-container">
 
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
+      <!-- Rotation Time Start -->
+      <div class="stat-container">
+        <h4 id="rotation-time-headline" class="stat-headline">Rotation Time</h4>
+        <p id="rotation-time-copy" class="stat-copy">58.6 Days</p>
+      </div>
+      <!-- Rotation Time End -->
 
-  Rotation Time
-  10.8 Hours
+      <!-- Revolution Time Start -->
+      <div class="stat-container">
+        <h4 id="revolution-time-headline" class="stat-headline">Revolution Time</h4>
+        <p id="revolution-time-copy" class="stat-copy">87.97 Days</p>
+      </div>
+      <!-- Revolution Time End -->
 
-  Revolution Time
-  29.46 Years
+      <!-- Radius Start -->
+      <div class="stat-container">
+        <h4 id="radius-headline" class="stat-headline">Radius</h4>
+        <p id="radius-copy" class="stat-copy">2,439.7 KM</p>
+      </div>
+      <!-- Radius End -->
 
-  Radius
-  58,232 KM
+      <!-- Temperature Start -->
+      <div class="stat-container">
+        <h4 id="temp-headline" class="stat-headline">Average Temp.</h4>
+        <p id="temp-copy" class="stat-copy">430°c</p>
+      </div>
+      <!-- Temperature End -->
 
-  Average Temp.
-  -138°c
+    </article>
+
+  </main>
+  <!-- <button><a href="/mars">Press me</a></button> -->
+
+  <script src="../public/main.js"></script>
 </body>
 </html>
