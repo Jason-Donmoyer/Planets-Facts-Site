@@ -80,18 +80,18 @@ for (let i = 0; i < navBtnsArr.length; i++) {
 
 
 // Get data from API
-async function getData() {
-  const res = await fetch('http://localhost:3000/data')
-  .then(res => res.json())
-  .then(data => {
-    console.log(data)
-    for (let i in data) {
-      planetData.push(data[i]);
-    }
-    // let planetNumber = 0;
-    console.log(planetData[planetNumber].overview.content);
-  });
-}
+// async function getData() {
+//   const res = await fetch('http://localhost:3000/data')
+//   .then(res => res.json())
+//   .then(data => {
+//     console.log(data)
+//     for (let i in data) {
+//       planetData.push(data[i]);
+//     }
+//     // let planetNumber = 0;
+//     console.log(planetData[planetNumber].overview.content);
+//   });
+// }
 
 getData();
 
