@@ -4,7 +4,7 @@
   "description": "website to explore the solar system",
   "main": "src/public/index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
@@ -31,9 +31,13 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+    "consolidate": "^0.16.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "express-handlebars": "^6.0.5",
+    "handlebars": "^4.7.7",
+    "mustache": "^4.2.0",
     "node-fetch": "^3.2.3"
   },
   "engines": {

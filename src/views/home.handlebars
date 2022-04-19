@@ -1,0 +1,185 @@
+<body class="main-container">
+
+  <!-- Navigation Start -->
+  <nav class="main-nav">
+    <div class="navbar">
+      <h2 class="nav-title">THE PLANETS</h2>
+      <div id="hamburger-menu" class="hamburger-menu"></div>
+     
+    </div>
+
+    <div class="nav-horizontal-line"></div>
+    
+ 
+
+   <!-- Navigation Menu Start -->
+   <div id="nav-btns-container" class="nav-btns-container">
+     <div id="mercury-nav-btn" class="nav-btn-container">
+       <div class="nav-btn-info-container">
+        <div id="mercury-color-container" class="planet-color-container mercury-color-container"></div>
+        <p class="nav-btn-copy">Mercury</p>
+       </div>
+       <div class="chevron-icon"></div>
+     </div>
+     <div class="nav-horizontal-line"></div>
+     <div id="venus-nav-btn" class="nav-btn-container">
+       <div class="nav-btn-info-container">
+        <div id="venus-color-container" class="planet-color-container venus-color-container"></div>
+        <p class="nav-btn-copy">Venus</p>
+       </div>
+        <div class="chevron-icon"></div>
+     </div>
+     <div class="nav-horizontal-line"></div>
+     <div id="earth-nav-btn" class="nav-btn-container">
+       <div class="nav-btn-info-container">
+        <div id="earth-color-container" class="planet-color-container earth-color-container"></div>
+        <p class="nav-btn-copy">Earth</p>
+       </div>
+        <div class="chevron-icon"></div>
+     </div>
+     <div class="nav-horizontal-line"></div>
+     <div id="mars-nav-btn" class="nav-btn-container">
+       <div class="nav-btn-info-container">
+        <div id="mars-color-container" class="planet-color-container mars-color-container"></div>
+        <p class="nav-btn-copy">Mars</p>
+       </div> 
+        <div class="chevron-icon"></div>
+     </div>
+     <div class="nav-horizontal-line"></div>
+     <div id="jupiter-nav-btn" class="nav-btn-container">
+       <div class="nav-btn-info-container">
+        <div id="jupiter-color-container" class="planet-color-container jupiter-color-container"></div>
+        <p class="nav-btn-copy">Jupiter</p>
+       </div>
+        <div class="chevron-icon"></div>
+     </div>
+     <div class="nav-horizontal-line"></div>
+     <div id="saturn-nav-btn" class="nav-btn-container">
+       <div class="nav-btn-info-container">
+        <div id="saturn-color-container" class="planet-color-container saturn-color-container"></div>
+        <p class="nav-btn-copy">Saturn</p>
+       </div> 
+        <div class="chevron-icon"></div>
+     </div>
+     <div class="nav-horizontal-line"></div>
+     <div id="uranus-nav-btn" class="nav-btn-container">
+       <div class="nav-btn-info-container">
+        <div id="uranus-color-container" class="planet-color-container uranus-color-container"></div>
+        <p class="nav-btn-copy">Uranus</p>
+       </div> 
+        <div class="chevron-icon"></div>
+     </div>
+     <div class="nav-horizontal-line"></div>
+     <div id="neptune-nav-btn" class="nav-btn-container">
+       <div class="nav-btn-info-container">
+        <div id="neptune-color-container" class="planet-color-container neptune-color-container"></div>
+        <p class="nav-btn-copy">Neptune</p>
+       </div> 
+        <div class="chevron-icon"></div>
+     </div>
+   </div>
+   <!-- Navigation Menu End -->
+  </nav>
+  <!-- Navigation End -->
+
+  <!-- Main -->
+  <main id="main-content" class="main-content">
+
+    <!-- Fact Selection Buttons Container Start -->
+    <div class="fact-selection-btns-container">
+      <div class="selection-btn">
+        <h3 class="selection-btn-copy">Overview</h3>
+        <div id="overview-selection-marker" class="selection-marker mercury-color-container marker-active"></div>
+      </div>
+      <div class="selection-btn">
+        <h3 class="selection-btn-copy">Structure</h3>
+        <div id="structure-selection-marker" class="selection-marker"></div>
+      </div>
+      <div class="selection-btn">
+        <h3 class="selection-btn-copy">Surface</h3>
+        <div id="geology-selection-marker" class="selection-marker"></div>
+      </div>
+    </div>
+    <div class="nav-horizontal-line"></div>
+    <!-- Fact Selection Buttons Container SEnd -->
+
+    <!-- Main Image Start -->
+    <div class="planet-img-container">
+      <div id="planet-mercury-img" class="planet-img mercury-img"></div>
+    </div>
+    <!-- Main Image End -->
+
+    <!-- Planet Information Start -->
+    <article class="planet-info-container">
+      <h1 class="main-headline">{{planetName}}</h1>
+
+      <!-- Overview Content Start -->
+      <p id="planet-overview-copy" class="planet-info-copy">{{planetOverview}}</p>
+      <div id="planet-overview-src-container" class="planet-src-container">
+        <p id="overview-src-copy" class="src-copy">Source : <a href="https://en.wikipedia.org/wiki/Mercury_(mercury)" target="_blank">Wikipedia</a> <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) --></p>
+        <div class="arrow-icon"></div>
+      </div>
+      <!-- Overview Content End -->
+
+      <!-- Internal Structure Content Start -->
+      <p id="planet-structure-copy" class="planet-info-copy">Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and 
+      a solid inner core. The planet's density is the second highest in the 
+      Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
+      </p>
+        <div id="planet-structure-src-container" class="planet-src-container">
+          <p id="structure-src-copy" class="src-copy"></p>Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure --></p>
+          <div class="arrow-icon"></div>
+        </div>
+        <!-- Internal Structure Content End -->
+
+        <!-- Surface Geology Content Start -->
+        <p id="planet-surface-copy" class="planet-info-copy">Mercury's surface is similar in appearance to that of the   Moon, showing extensive mare-like plains and heavy cratering, indicating that it has 
+        been geologically inactive for billions of years. It is more heterogeneous 
+        than either Mars's or the Moon’s.</p>
+        <div id="planet-surface-src-container" class="planet-src-container">
+          <p id="surface-src-copy" class="src-copy">Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology --></p>
+          <div class="arrow-icon"></div>
+        </div>
+        <!-- Surface Geology Content End -->
+
+    </article>
+    <!-- Planet Information End -->
+
+    <!-- Planet Stats Start -->
+    <article class="planet-stats-container">
+
+      <!-- Rotation Time Start -->
+      <div class="stat-container">
+        <h4 id="rotation-time-headline" class="stat-headline">Rotation Time</h4>
+        <p id="rotation-time-copy" class="stat-copy">{{rotationTime}}</p>
+      </div>
+      <!-- Rotation Time End -->
+
+      <!-- Revolution Time Start -->
+      <div class="stat-container">
+        <h4 id="revolution-time-headline" class="stat-headline">Revolution Time</h4>
+        <p id="revolution-time-copy" class="stat-copy">{{revolutionTime}}</p>
+      </div>
+      <!-- Revolution Time End -->
+
+      <!-- Radius Start -->
+      <div class="stat-container">
+        <h4 id="radius-headline" class="stat-headline">Radius</h4>
+        <p id="radius-copy" class="stat-copy">{{radius}}</p>
+      </div>
+      <!-- Radius End -->
+
+      <!-- Temperature Start -->
+      <div class="stat-container">
+        <h4 id="temp-headline" class="stat-headline">Average Temp.</h4>
+        <p id="temp-copy" class="stat-copy">{{temperature}}</p>
+      </div>
+      <!-- Temperature End -->
+
+    </article>
+
+  </main>
+  <!-- <button><a href="/mars">Press me</a></button> -->
+
+  <script src="../public/main.js"></script>
+</body>

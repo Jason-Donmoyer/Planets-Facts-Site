@@ -3,7 +3,7 @@
 const hamburgerMenuBtn = document.getElementById('hamburger-menu');
 const navBtnsContainer = document.getElementById('nav-btns-container');
 const mainContentContainer = document.getElementById('main-content');
-let planetNumber;
+let planetNumber = 0;
 
 const planetData = [];
 
@@ -62,14 +62,16 @@ for (let i = 0; i < navBtnsArr.length; i++) {
   // console.log(navBtnsArr[i].children[0].children[1].textContent.toLowerCase());
   navBtnsArr[i].addEventListener('click', () => {
     planetNumber = i;
-    localStorage.setItem('planetNumber', planetNumber);
+    // localStorage.setItem('planetNumber', planetNumber);
     console.log(planetNumber);
     const link = document.createElement('a');
       if (`/${navBtnsArr[i].children[0].children[1].textContent.toLowerCase()}` === '/mercury') {
         link.href = '/';
+        // planetNumber = 0;
       } else {
         link.href = `/${navBtnsArr[i].children[0].children[1].textContent.toLowerCase()}`;
       }   
+      localStorage.setItem('planetNumber', planetNumber);
       document.body.appendChild(link);
       link.click();
       link.remove();
