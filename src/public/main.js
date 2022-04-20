@@ -93,7 +93,7 @@ for (let i = 0; i < navBtnsArr.length; i++) {
 //   });
 // }
 
-getData();
+//getData();
 
 
 

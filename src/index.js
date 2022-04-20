@@ -45,7 +45,7 @@ const data = [];
 app.use(cors());
 // app.use(express.static('public'));
 app.use(express.static(path.join(__dirname, '/')));
-app.use(express.static(path.join(__dirname, 'assets')));
+app.use(express.static(path.join(__dirname, './assets')));
 
 // Get data from API
 fetch('https://jason-donmoyer.github.io/JSON-Files/planet-data.json')
@@ -61,7 +61,26 @@ fetch('https://jason-donmoyer.github.io/JSON-Files/planet-data.json')
     console.log(err);
   });
 
-
+ 
+// returns data to send to client
+function getPlanetData(id) {
+  return {
+    planetImg: data[id].images.planet,
+    planetInternalImg: data[id].images.internal,
+    planetGeologyImg: data[id].images.geology,
+    planetName: data[id].name,
+    planetOverview: data[id].overview.content,
+    planetOverviewSrc: data[id].overview.source,
+    planetStructure: data[id].structure.content,
+    planetStructureSrc: data[id].structure.source,
+    planetGeology: data[id].geology,
+    planetGeologySrc: data[id].geology.source,
+    rotationTime: data[id].rotation,
+    revolutionTime: data[id].revolution,
+    radius: data[id].radius,
+    temperature: data[id].temperature,
+  };
+}
 
 
 // ROUTES
@@ -73,106 +92,42 @@ router.get('/data', (req, res) => {
 
 app.get('/', (req,res) => {
   // res.sendFile(path.join(__dirname+'/public/index.html'));
-  res.render('home', {
-    planetImg: data[0].images.planet,
-    planetName: data[0].name,
-    planetOverview: data[0].overview.content,
-    rotationTime: data[0].rotation,
-    revolutionTime: data[0].revolution,
-    radius: data[0].radius,
-    temperature: data[0].temperature,
-  });
+  res.render('home', getPlanetData(0));
 });
 
 router.get('/venus', (req,res) => {
   // res.sendFile(path.join(__dirname+'/public/venus.html'));
-  res.render('home', {
-    planetImg: data[1].images.planet,
-    planetName: data[1].name,
-    planetOverview: data[1].overview.content,
-    rotationTime: data[1].rotation,
-    revolutionTime: data[1].revolution,
-    radius: data[1].radius,
-    temperature: data[1].temperature,
-  })
+  res.render('home', getPlanetData(1));
 });
 
 router.get('/earth', (req,res) => {
   // res.sendFile(path.join(__dirname+'/public/earth.html'));
-  res.render('home', {
-    planetImg: data[2].images.planet,
-    planetName: data[2].name,
-    planetOverview: data[2].overview.content,
-    rotationTime: data[2].rotation,
-    revolutionTime: data[2].revolution,
-    radius: data[2].radius,
-    temperature: data[2].temperature,
-  })
+  res.render('home', getPlanetData(2));
 });
 
 router.get('/mars', (req,res) => {
   // res.sendFile(path.join(__dirname+'/public/mars.html'));
-  res.render('home', {
-    planetImg: data[3].images.planet,
-    planetName: data[3].name,
-    planetOverview: data[3].overview.content,
-    rotationTime: data[3].rotation,
-    revolutionTime: data[3].revolution,
-    radius: data[3].radius,
-    temperature: data[3].temperature,
-  })
+  res.render('home', getPlanetData(3));
 });
 
 router.get('/jupiter', (req,res) => {
   // res.sendFile(path.join(__dirname+'/public/jupiter.html'));
-  res.render('home', {
-    planetImg: data[4].images.planet,
-    planetName: data[4].name,
-    planetOverview: data[4].overview.content,
-    rotationTime: data[4].rotation,
-    revolutionTime: data[4].revolution,
-    radius: data[4].radius,
-    temperature: data[4].temperature,
-  })
+  res.render('home', getPlanetData(4));
 });
 
 router.get('/saturn', (req,res) => {
   // res.sendFile(path.join(__dirname+'/public/saturn.html'));
-  res.render('home', {
-    planetImg: data[5].images.planet,
-    planetName: data[5].name,
-    planetOverview: data[5].overview.content,
-    rotationTime: data[5].rotation,
-    revolutionTime: data[5].revolution,
-    radius: data[5].radius,
-    temperature: data[5].temperature,
-  })
+  res.render('home', getPlanetData(5));
 });
 
 router.get('/uranus', (req,res) => {
   // res.sendFile(path.join(__dirname+'/public/uranus.html'));
-  res.render('home', {
-    planetImg: data[6].images.planet,
-    planetName: data[6].name,
-    planetOverview: data[6].overview.content,
-    rotationTime: data[6].rotation,
-    revolutionTime: data[6].revolution,
-    radius: data[6].radius,
-    temperature: data[6].temperature,
-  })
+  res.render('home', getPlanetData(6));
 });
 
 router.get('/neptune', (req,res) => {
   // res.sendFile(path.join(__dirname+'/public/neptune.html'));
-  res.render('home', {
-    planetImg: data[7].images.planet,
-    planetName: data[7].name,
-    planetOverview: data[7].overview.content,
-    rotationTime: data[7].rotation,
-    revolutionTime: data[7].revolution,
-    radius: data[7].radius,
-    temperature: data[7].temperature,
-  })
+  res.render('home', getPlanetData(7));
 });
 
 
