@@ -66,9 +66,10 @@ fetch('https://jason-donmoyer.github.io/JSON-Files/planet-data.json')
 function getPlanetData(id) {
   return {
     planetImg: data[id].images.planet,
-    planetInternalImg: data[id].images.internal,
+    planetStructureImg: data[id].images.internal,
     planetGeologyImg: data[id].images.geology,
     planetName: data[id].name,
+    planetColor: data[id].name.toLowerCase(),
     planetOverview: data[id].overview.content,
     planetOverviewSrc: data[id].overview.source,
     planetStructure: data[id].structure.content,

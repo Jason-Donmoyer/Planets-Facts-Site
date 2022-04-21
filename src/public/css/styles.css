@@ -179,51 +179,51 @@ html {
 /* ****************** */
 /* PLANET COLORS */
 
-
+/* CHANGE TO .<planet>-color */
 /* Mercury */
-.mercury-color-container {
+.mercury-color {
   background-color: var(--cyan);
 }
 
 
 /* Venus */
-.venus-color-container {
+.venus-color {
   background-color: #F7CC7F;
 }
 
 
 /* Earth */
-.earth-color-container {
+.earth-color {
   background-color: #545BFE;
 }
 
 
 /* Mars */
-.mars-color-container {
+.mars-color {
   background-color: #FF6A45;;
 }
 
 
 /* Jupiter */
-.jupiter-color-container {
+.jupiter-color {
   background-color: #ECAD7A;
 }
 
 
 /* Saturn */
-.saturn-color-container {
+.saturn-color {
   background-color: #FCCB6B;
 }
 
 
 /* Uranus */
-.uranus-color-container {
+.uranus-color {
   background-color: #65F0D5;
 }
 
 
 /* Neptune */
-.neptune-color-container {
+.neptune-color {
   background-color: #497EFA;
 }
 
@@ -282,9 +282,33 @@ html {
 }
 
 
+/* Selection Markers */
+#overview-selection-marker {
+  display: block;
+}
+
+#structure-selection-marker,
+#geology-selection-marker {
+  display: none;
+}
+
+
 /* Selection Marker */
 .selection-marker {
   height: 0.25rem;
+}
+
+
+/* Planet Images displays */
+#planet-img-container {
+  display: flex;
+}
+
+
+/* PLANET IMG TEST */
+#planet-geology-img-container,
+#planet-structure-img-container {
+  display: none;
 }
 
 
@@ -302,6 +326,7 @@ html {
   height: 6.9375rem;
   width: 6.9375rem;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* REMOVE */

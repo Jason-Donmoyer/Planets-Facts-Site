@@ -3,12 +3,44 @@
 const hamburgerMenuBtn = document.getElementById('hamburger-menu');
 const navBtnsContainer = document.getElementById('nav-btns-container');
 const mainContentContainer = document.getElementById('main-content');
-let planetNumber = 0;
+
+// Facts Selection Buttons
+const factsBtnsContainer = document.getElementById('fact-selection-btns-container');
+
+const overviewSelectionBtn = document.getElementById('overview-selection-btn');
+const structureSelectionBtn = document.getElementById('structure-selection-btn');
+const geologySelectionBtn = document.getElementById('geology-selection-btn');
+
+const overviewSelectionMarker = document.getElementById('overview-selection-marker');
+const structureSelectionMarker = document.getElementById('structure-selection-marker');
+const geologySelectionMarker = document.getElementById('geology-selection-marker');
+
+
+
+
+
+// Planet images
+const planetImg = document.getElementById('planet-img-container');
+const planetStructureImg = document.getElementById('planet-structure-img-container');
+const planetGeologyImg = document.getElementById('planet-geology-img-container');
+
+
+// Planet Info Containers
+const planetOverviewCopy = document.getElementById('planet-overview-copy');
+const planetStructureCopy = document.getElementById('planet-structure-copy');
+const planetGeologyCopy = document.getElementById('planet-surface-copy');
+
+// Planet Info links
+const overviewSrc = document.getElementById('overview-src-copy');
+const structureSrc = document.getElementById('structure-src-copy');
+const geologySrc = document.getElementById('surface-src-copy');
+
+// let planetNumber = 0;
 
 const planetData = [];
 
 // Check to see if planet number is defined in localStorage
-localStorage.getItem('planetNumber') ? planetNumber = localStorage.getItem('planetNumber') : planetNumber = 0;
+// localStorage.getItem('planetNumber') ? planetNumber = localStorage.getItem('planetNumber') : planetNumber = 0;
 
 
 // Hamburger Menu Functions
@@ -61,9 +93,9 @@ const navBtnsArr = [
 for (let i = 0; i < navBtnsArr.length; i++) {
   // console.log(navBtnsArr[i].children[0].children[1].textContent.toLowerCase());
   navBtnsArr[i].addEventListener('click', () => {
-    planetNumber = i;
+    // planetNumber = i;
     // localStorage.setItem('planetNumber', planetNumber);
-    console.log(planetNumber);
+    // console.log(planetNumber);
     const link = document.createElement('a');
       if (`/${navBtnsArr[i].children[0].children[1].textContent.toLowerCase()}` === '/mercury') {
         link.href = '/';
@@ -71,12 +103,69 @@ for (let i = 0; i < navBtnsArr.length; i++) {
       } else {
         link.href = `/${navBtnsArr[i].children[0].children[1].textContent.toLowerCase()}`;
       }   
-      localStorage.setItem('planetNumber', planetNumber);
+      // localStorage.setItem('planetNumber', planetNumber);
       document.body.appendChild(link);
       link.click();
       link.remove();
   })
 }
+
+
+// Planet facts selection Buttons event listeners
+overviewSelectionBtn.addEventListener('click', () => {
+  // selection markers
+  overviewSelectionMarker.style.display = 'block';
+  structureSelectionMarker.style.display = 'none';
+  geologySelectionMarker.style.display = 'none';
+
+  // planet images
+  // planetImg.style.display = 'flex';
+  // planetStructureImg.style.display = 'none';
+  // planetGeologyImg.style.display = 'none';
+
+  // planet info copy
+  // planetOverviewCopy.style.display = 'block';
+  // planetStructureCopy.style.display = 'none';
+  // planetGeologyCopy.style.display = 'none';
+
+});
+
+structureSelectionBtn.addEventListener('click', () => {
+  // selection markers
+  structureSelectionMarker.style.display = 'block';
+  overviewSelectionMarker.style.display = 'none';
+  geologySelectionMarker.style.display = 'none';
+
+  // planet images
+  // planetImg.style.display = 'none';
+  // planetStructureImg.style.display = 'flex';
+  // planetGeologyImg.style.display = 'none';
+
+
+  // planet info copy
+  // planetOverviewCopy.style.display = 'none';
+  // planetStructureCopy.style.display = 'block';
+  // planetGeologyCopy.style.display = 'none';
+
+});
+
+geologySelectionBtn.addEventListener('click', () => {
+  // selection markers
+  geologySelectionMarker.style.display = 'block';
+  overviewSelectionMarker.style.display = 'none';
+  structureSelectionMarker.style.display = 'none';
+
+  // planet images
+  // planetImg.style.display = 'none';
+  // planetStructureImg.style.display = 'none';
+  // planetGeologyImg.style.display = 'flex';
+
+  // planet info copy
+  // planetOverviewCopy.style.display = 'none';
+  // planetStructureCopy.style.display = 'none';
+  // planetGeologyCopy.style.display = 'block';
+
+});
 
 
 // Get data from API
