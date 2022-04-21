@@ -327,6 +327,7 @@ html {
   width: 6.9375rem;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* REMOVE */

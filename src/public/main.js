@@ -119,9 +119,9 @@ overviewSelectionBtn.addEventListener('click', () => {
   geologySelectionMarker.style.display = 'none';
 
   // planet images
-  // planetImg.style.display = 'flex';
-  // planetStructureImg.style.display = 'none';
-  // planetGeologyImg.style.display = 'none';
+  planetImg.style.display = 'flex';
+  planetStructureImg.style.display = 'none';
+  planetGeologyImg.style.display = 'none';
 
   // planet info copy
   // planetOverviewCopy.style.display = 'block';
@@ -137,9 +137,9 @@ structureSelectionBtn.addEventListener('click', () => {
   geologySelectionMarker.style.display = 'none';
 
   // planet images
-  // planetImg.style.display = 'none';
-  // planetStructureImg.style.display = 'flex';
-  // planetGeologyImg.style.display = 'none';
+  planetImg.style.display = 'none';
+  planetStructureImg.style.display = 'flex';
+  planetGeologyImg.style.display = 'none';
 
 
   // planet info copy
@@ -156,9 +156,9 @@ geologySelectionBtn.addEventListener('click', () => {
   structureSelectionMarker.style.display = 'none';
 
   // planet images
-  // planetImg.style.display = 'none';
-  // planetStructureImg.style.display = 'none';
-  // planetGeologyImg.style.display = 'flex';
+  planetImg.style.display = 'none';
+  planetStructureImg.style.display = 'none';
+  planetGeologyImg.style.display = 'flex';
 
   // planet info copy
   // planetOverviewCopy.style.display = 'none';
