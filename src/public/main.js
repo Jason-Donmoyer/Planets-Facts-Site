@@ -16,9 +16,6 @@ const structureSelectionMarker = document.getElementById('structure-selection-ma
 const geologySelectionMarker = document.getElementById('geology-selection-marker');
 
 
-
-
-
 // Planet images
 const planetImg = document.getElementById('planet-img-container');
 const planetStructureImg = document.getElementById('planet-structure-img-container');
@@ -31,9 +28,9 @@ const planetStructureCopy = document.getElementById('planet-structure-copy');
 const planetGeologyCopy = document.getElementById('planet-surface-copy');
 
 // Planet Info links
-const overviewSrc = document.getElementById('overview-src-copy');
-const structureSrc = document.getElementById('structure-src-copy');
-const geologySrc = document.getElementById('surface-src-copy');
+const planetSrc = document.getElementById('planet-src-copy');
+// const structureSrc = document.getElementById('structure-src-copy');
+// const geologySrc = document.getElementById('surface-src-copy');
 
 // let planetNumber = 0;
 
@@ -124,9 +121,9 @@ overviewSelectionBtn.addEventListener('click', () => {
   planetGeologyImg.style.display = 'none';
 
   // planet info copy
-  // planetOverviewCopy.style.display = 'block';
-  // planetStructureCopy.style.display = 'none';
-  // planetGeologyCopy.style.display = 'none';
+  planetOverviewCopy.style.display = 'block';
+  planetStructureCopy.style.display = 'none';
+  planetGeologyCopy.style.display = 'none';
 
 });
 
@@ -143,9 +140,9 @@ structureSelectionBtn.addEventListener('click', () => {
 
 
   // planet info copy
-  // planetOverviewCopy.style.display = 'none';
-  // planetStructureCopy.style.display = 'block';
-  // planetGeologyCopy.style.display = 'none';
+  planetOverviewCopy.style.display = 'none';
+  planetStructureCopy.style.display = 'block';
+  planetGeologyCopy.style.display = 'none';
 
 });
 
@@ -161,9 +158,9 @@ geologySelectionBtn.addEventListener('click', () => {
   planetGeologyImg.style.display = 'flex';
 
   // planet info copy
-  // planetOverviewCopy.style.display = 'none';
-  // planetStructureCopy.style.display = 'none';
-  // planetGeologyCopy.style.display = 'block';
+  planetOverviewCopy.style.display = 'none';
+  planetStructureCopy.style.display = 'none';
+  planetGeologyCopy.style.display = 'block';
 
 });
 

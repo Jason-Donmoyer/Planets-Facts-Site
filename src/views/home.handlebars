@@ -127,27 +127,41 @@
 
       <!-- Overview Content Start -->
       <p id="planet-overview-copy" class="planet-info-copy">{{planetOverview}}</p>
-      <div id="planet-overview-src-container" class="planet-src-container">
-        <p id="overview-src-copy" class="src-copy">Source : <a href="{{planetOverviewSrc}}" target="_blank">Wikipedia</a> <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) --></p>
+      <!-- Overview Content End -->
+      
+      <!-- Internal Structure Content Start -->
+      <p id="planet-structure-copy" class="planet-info-copy">{{planetStructure}}</p>
+      <!-- Internal Structure Content End -->
+      
+      <!-- Surface Geology Content Start -->
+      <p id="planet-surface-copy" class="planet-info-copy">{{planetGeology}}</p>
+      <!-- Surface Geology Content End -->
+
+      <div id="planet-src-container" class="planet-src-container">
+        <p id="planet-src-copy" class="src-copy">Source : <a href="{{planetSrc}}" target="_blank">Wikipedia</a> <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) --></p>
         <div class="arrow-icon"></div>
       </div>
-      <!-- Overview Content End -->
+      
 
-      <!-- Internal Structure Content Start -->
-      <p id="planet-structure-copy" class="planet-info-copy">{{planetStructure}}
-      </p>
-        <div id="planet-structure-src-container" class="planet-src-container">
+      {{!-- <!-- Internal Structure Content Start -->
+      <p id="planet-structure-copy" class="planet-info-copy">{{planetStructure}}</p>
+      <!-- Internal Structure Content End -->
+      
+      <!-- Surface Geology Content Start -->
+      <p id="planet-surface-copy" class="planet-info-copy">{{planetGeology}}</p>
+      <!-- Surface Geology Content End --> --}}
+        {{!-- <div id="planet-structure-src-container" class="planet-src-container">
           <p id="structure-src-copy" class="src-copy"></p>Source : <a href="{{planetSrc}}" target="_blank">Wikipedia</a><!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure --></p>
           <div class="arrow-icon"></div>
         </div>
-        <!-- Internal Structure Content End -->
+         --}}
 
         <!-- Surface Geology Content Start -->
-        <p id="planet-surface-copy" class="planet-info-copy">{{planetGeology}}</p>
+        {{!-- <p id="planet-surface-copy" class="planet-info-copy">{{planetGeology}}</p>
         <div id="planet-surface-src-container" class="planet-src-container">
           <p id="surface-src-copy" class="src-copy">Source : <a href="{{planetGeologySrc}}" target="_blank">Wikipedia</a> <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology --></p>
           <div class="arrow-icon"></div>
-        </div>
+        </div> --}}
         <!-- Surface Geology Content End -->
 
     </article>
