@@ -182,13 +182,20 @@ html {
 }
 
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!SSUE */
+
 /* ****************** */
-/* PLANET COLORS */
+/* PLANET COLORS AND SIZES */
 
 /* CHANGE TO .<planet>-color */
 /* Mercury */
 .mercury-color {
   background-color: var(--cyan);
+}
+
+.mercury-img-size {
+  height: 6.9375rem;
+  width: 6.9375rem;
 }
 
 
@@ -197,6 +204,10 @@ html {
   background-color: #F7CC7F;
 }
 
+.venus-img-size {
+  height: 9.625rem;
+  width: 9.625rem;
+}
 
 /* Earth */
 .earth-color {
@@ -213,6 +224,11 @@ html {
 /* Jupiter */
 .jupiter-color {
   background-color: #ECAD7A;
+}
+
+.jupiter-img-size {
+  height: 14rem;
+  width: 14rem;
 }
 
 
@@ -329,8 +345,8 @@ html {
 
 /* Planet Image */
 .planet-img {
-  height: 6.9375rem;
-  width: 6.9375rem;
+  /* height: 6.9375rem;
+  width: 6.9375rem; */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
