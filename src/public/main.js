@@ -86,6 +86,9 @@ const navBtnsArr = [
   neptuneNavBtn
 ];
 
+
+// CREATE REUSABLE FUNCTION FOR LISTENERS ON NAV BTNS
+
 // Add event listeners and store planet number to extract data from API
 for (let i = 0; i < navBtnsArr.length; i++) {
   // console.log(navBtnsArr[i].children[0].children[1].textContent.toLowerCase());
@@ -99,6 +102,52 @@ for (let i = 0; i < navBtnsArr.length; i++) {
         // planetNumber = 0;
       } else {
         link.href = `/${navBtnsArr[i].children[0].children[1].textContent.toLowerCase()}`;
+      }   
+      // localStorage.setItem('planetNumber', planetNumber);
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+  })
+}
+
+
+// Add event listenter to nav Buttons to Lg Screen Nav Menu
+
+const mercuryNavBtnLg = document.getElementById('mercury-nav-btn-lg');
+const venusNavBtnLg = document.getElementById('venus-nav-btn-lg');
+const earthNavBtnLg = document.getElementById('earth-nav-btn-lg');
+const marsNavBtnLg = document.getElementById('mars-nav-btn-lg');
+const jupiterNavBtnLg = document.getElementById('jupiter-nav-btn-lg');
+const saturnNavBtnLg = document.getElementById('saturn-nav-btn-lg');
+const uranusNavBtnLg = document.getElementById('uranus-nav-btn-lg');
+const neptuneNavBtnLg = document.getElementById('neptune-nav-btn-lg');
+
+// Array to hold nav buttons for lg screen nav
+const navBtnsArrLg = [
+  mercuryNavBtnLg,
+  venusNavBtnLg,
+  earthNavBtnLg,
+  marsNavBtnLg,
+  jupiterNavBtnLg,
+  saturnNavBtnLg,
+  uranusNavBtnLg,
+  neptuneNavBtnLg
+];
+
+
+// Add event listeners and store planet number to extract data from API for lg screen nav
+for (let i = 0; i < navBtnsArr.length; i++) {
+  // console.log(navBtnsArr[i].children[0].children[1].textContent.toLowerCase());
+  navBtnsArrLg[i].addEventListener('click', () => {
+    // planetNumber = i;
+    // localStorage.setItem('planetNumber', planetNumber);
+    // console.log(planetNumber);
+    const link = document.createElement('a');
+      if (`/${navBtnsArrLg[i].children[1].textContent.toLowerCase()}` === '/mercury') {
+        link.href = '/';
+        // planetNumber = 0;
+      } else {
+        link.href = `/${navBtnsArrLg[i].children[1].textContent.toLowerCase()}`;
       }   
       // localStorage.setItem('planetNumber', planetNumber);
       document.body.appendChild(link);

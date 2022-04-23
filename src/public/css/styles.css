@@ -130,6 +130,12 @@ html {
 /* NAV BTNS */
 
 
+/* Large Screen Nav Btns Container */
+.nav-btns-container-lg {
+  display: none;
+}
+
+
 /* Nav buttons container */
 .nav-btns-container {
   /* width: 100%; */
@@ -461,8 +467,71 @@ html {
 }
 
 
+/*******************************/
+       /* MEDIS QUERIES */
+/*******************************/
 
 
+/* Tablet */
+@media screen and (min-width: 481px) {
+
+
+/* Navbar */
+.navbar {
+  height: auto;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+
+
+/* Nav Title */
+.nav-title {
+  margin-bottom: 2.4375rem;
+}
+
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+}
+
+
+/* Large Screen Nav Btns Container */
+.nav-btns-container-lg {
+  height: 1.5625rem;
+  width: 87%;
+  margin-bottom: 1.6875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* Nav Btn Container */
+.nav-btn-container {
+  margin: 0;
+  width: auto;
+}
+
+
+/* Nav Button Copy */
+.nav-btn-copy {
+  font-size: 0.6875rem;
+  letter-spacing: 0.0625rem;
+}
+
+
+/* Planet Color Container */
+.planet-color-container {
+  display: none;
+}
+
+
+}
+
+
+/* Desktop */
+/* 769px */
 
 
 
