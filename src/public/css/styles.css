@@ -214,10 +214,20 @@ html {
   background-color: #545BFE;
 }
 
+.earth-img-size {
+  height: 10.8125rem;
+  width: 10.8125rem;
+}
+
 
 /* Mars */
 .mars-color {
   background-color: #FF6A45;;
+}
+
+.mars-img-size {
+  height: 8.0625rem;
+  width: 8.0625rem;
 }
 
 
@@ -237,16 +247,31 @@ html {
   background-color: #FCCB6B;
 }
 
+.saturn-img-size {
+  height: 16rem;
+  width: 16rem;
+}
+
 
 /* Uranus */
 .uranus-color {
   background-color: #65F0D5;
 }
 
+.uranus-img-size {
+  height: 11rem;
+  width: 11rem;
+}
+
 
 /* Neptune */
 .neptune-color {
   background-color: #497EFA;
+}
+
+.neptune-img-size {
+  height: 10.8125rem;
+  width: 10.8125rem;
 }
 
 
@@ -540,6 +565,63 @@ html {
 /* Planet Color Container */
 .planet-color-container {
   display: none;
+}
+
+
+/* Planet Img Container */
+.planet-img-container {
+  height: 28.75rem;
+}
+
+
+/* PLANET IMG SIZES */
+
+/* Mercury */
+.mercury-img-size {
+  height: 11.5rem;
+  width: 11.5rem;
+}
+
+/* Venus */
+.venus-img-size {
+  height: 15.8125rem;
+  width: 15.8125rem;
+}
+
+/* Earth */
+.earth-img-size {
+  height: 17.8125rem;
+  width: 17.8125rem;
+}
+
+/* Mars */
+.mars-img-size {
+  height: 13.3125rem;
+  width: 13.3125rem;
+}
+
+/* Jupiter */
+.jupiter-img-size {
+  height: 23.0625rem;
+  width: 23.0625rem;
+}
+
+/* Saturn */
+.saturn-img-size {
+  height: 26.375rem;
+  width: 26.375rem;
+}
+
+/* Uranus */
+.uranus-img-size {
+  height: 18.125rem;
+  width: 18.125rem;
+}
+
+/* Neptune */
+.neptune-img-size {
+  height: 17.8125rem;
+  width: 17.8125rem;
 }
 
 
