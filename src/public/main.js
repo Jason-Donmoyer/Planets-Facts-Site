@@ -161,8 +161,11 @@ for (let i = 0; i < navBtnsArr.length; i++) {
 overviewSelectionBtn.addEventListener('click', () => {
   // selection markers
   overviewSelectionMarker.style.display = 'block';
+  overviewSelectionBtn.classList.add('selection-btn-active')
   structureSelectionMarker.style.display = 'none';
+  structureSelectionBtn.classList.remove('selection-btn-active');
   geologySelectionMarker.style.display = 'none';
+  geologySelectionBtn.classList.remove('selection-btn-active');
 
   // planet images
   planetImg.style.display = 'flex';
@@ -179,8 +182,11 @@ overviewSelectionBtn.addEventListener('click', () => {
 structureSelectionBtn.addEventListener('click', () => {
   // selection markers
   structureSelectionMarker.style.display = 'block';
+  structureSelectionBtn.classList.add('selection-btn-active');
   overviewSelectionMarker.style.display = 'none';
+  overviewSelectionBtn.classList.remove('selection-btn-active');
   geologySelectionMarker.style.display = 'none';
+  geologySelectionBtn.classList.remove('selection-btn-active');
 
   // planet images
   planetImg.style.display = 'none';
@@ -198,8 +204,11 @@ structureSelectionBtn.addEventListener('click', () => {
 geologySelectionBtn.addEventListener('click', () => {
   // selection markers
   geologySelectionMarker.style.display = 'block';
+  geologySelectionBtn.classList.add('selection-btn-active');
   overviewSelectionMarker.style.display = 'none';
+  overviewSelectionBtn.classList.remove('selection-btn-active');
   structureSelectionMarker.style.display = 'none';
+  structureSelectionBtn.classList.remove('selection-btn-active');
 
   // planet images
   planetImg.style.display = 'none';

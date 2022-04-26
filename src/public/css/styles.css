@@ -318,6 +318,12 @@ html {
 }
 
 
+/* Selection Number */
+.selection-number {
+  display: none;
+}
+
+
 /* Selection Button Copy */
 .selection-btn-copy {
   font-size: 0.5625rem;
@@ -326,6 +332,12 @@ html {
   font-weight: var(--fw-bold);
   text-transform: uppercase;
   text-align: center;
+}
+
+
+/* Selection Btn Copy for Large Screens */
+.selection-btn-copy-lg {
+  display: none;
 }
 
 
@@ -568,9 +580,24 @@ html {
 }
 
 
+/* Main Content */
+/* Grid Container */
+.main-content {
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+  display: grid;
+  grid-template: 
+    "planet-img planet-img"
+    "planet-info fact-selection"
+    "stats-container stats-container"
+  ;
+}
+
+
 /* Planet Img Container */
 .planet-img-container {
   height: 28.75rem;
+  grid-area: planet-img;
 }
 
 
@@ -622,6 +649,91 @@ html {
 .neptune-img-size {
   height: 17.8125rem;
   width: 17.8125rem;
+}
+
+
+/* Planet Info Container */
+.planet-info-container {
+  grid-area: planet-info;
+  height: 15.8125rem;
+  margin-right: 15%;
+  margin-left: 0;
+  align-items: flex-start;
+  text-align: left;
+}
+
+
+/* Main Headline h1 */
+.main-headline {
+  font-size: 3rem;
+  line-height: 3.875rem;
+}
+
+
+/* Facts Selection Container */
+.fact-selection-btns-container {
+  grid-area: fact-selection;
+  height: 9.5rem;
+  margin: 0;
+  align-self: center;
+  flex-direction: column;
+}
+
+/* Selection Buttons */
+.selection-btn {
+  height: 2.5rem;
+  width: 17.5625rem;
+  border: 1px solid rgba(256, 256, 256, 0.2);
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Selection Btn Active */
+.selection-btn-active {
+  border: none;
+}
+
+
+/* Selection Btn Copy */
+.selection-btn-copy {
+  line-height: 1.5625rem;
+  letter-spacing: 0.120535rem;
+}
+
+
+/* Selection Btn Copy for Large Screens */
+.selection-btn-copy-lg {
+  display: inline;
+}
+
+
+/* Slection Number */
+.selection-number {
+  display: inline;
+  margin-right: 0.875rem;
+  margin-left: 1.25rem;
+  opacity: 0.5;
+}
+
+
+/* Selection Marker */ 
+.selection-marker {
+  height: 2.5rem;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Selection Menu Horizontal Line */
+.selection-menu-horizontal-line {
+  display: none;
+}
+
+
+/* Planet Stats Container */
+.planet-stats-container {
+  grid-area: stats-container;
 }
 
 
