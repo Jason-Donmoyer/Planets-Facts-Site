@@ -856,6 +856,57 @@ html {
   padding-left: 2.1875rem;
 }
 
+/* PLANET IMG SIZES */
+
+/* Mercury */
+.mercury-img-size {
+  height: 18.125rem;
+  width: 18.125rem;
+}
+
+/* Venus */
+.venus-img-size {
+  height: 25rem;
+  width: 25rem;
+}
+
+/* Earth */
+.earth-img-size {
+  height: 28.125rem;
+  width: 28.125rem;
+}
+
+/* Mars */
+.mars-img-size {
+  height: 21rem;
+  width: 21rem;
+}
+
+/* Jupiter */
+.jupiter-img-size {
+  height: 36.375rem;
+  width: 36.375rem;
+}
+
+/* Saturn */
+.saturn-img-size {
+  height: 41.630625rem;
+  width: 41.630625rem;
+}
+
+/* Uranus */
+.uranus-img-size {
+  height: 28.625rem;
+  width: 28.625rem;
+}
+
+/* Neptune */
+.neptune-img-size {
+  height: 28.125rem;
+  width: 28.125rem;
+}
+
+
 
 /* Planet Info Container */
 .planet-info-container {
