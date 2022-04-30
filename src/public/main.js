@@ -27,6 +27,11 @@ const planetOverviewCopy = document.getElementById('planet-overview-copy');
 const planetStructureCopy = document.getElementById('planet-structure-copy');
 const planetGeologyCopy = document.getElementById('planet-surface-copy');
 
+
+// Main H1
+const mainHeadline = document.querySelector('.main-headline').textContent.toLowerCase();
+
+
 // Planet Info links
 const planetSrc = document.getElementById('planet-src-copy');
 // const structureSrc = document.getElementById('structure-src-copy');
@@ -136,9 +141,10 @@ const navBtnsArrLg = [
 
 
 // Add event listeners and store planet number to extract data from API for lg screen nav
-for (let i = 0; i < navBtnsArr.length; i++) {
+for (let i = 0; i < navBtnsArrLg.length; i++) {
   // console.log(navBtnsArr[i].children[0].children[1].textContent.toLowerCase());
   navBtnsArrLg[i].addEventListener('click', () => {
+    
     // planetNumber = i;
     // localStorage.setItem('planetNumber', planetNumber);
     // console.log(planetNumber);
@@ -155,6 +161,12 @@ for (let i = 0; i < navBtnsArr.length; i++) {
       link.remove();
   })
 }
+
+// // Change color of planet marker on Desktop
+navBtnsArrLg.forEach(btn => btn.id === `${mainHeadline}-nav-btn-lg` ? btn.children[0].classList.add('desktop-planet-color-active') : btn.children[0].classList.remove('desktop-planet-color-active'));
+
+
+
 
 
 // Planet facts selection Buttons event listeners
