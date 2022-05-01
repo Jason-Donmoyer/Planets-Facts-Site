@@ -911,11 +911,47 @@ html {
 /* Planet Info Container */
 .planet-info-container {
   width: 20.375rem;
+  margin: 0;
+  justify-self: center;
+  align-self: center;
+}
+
+
+/* Main Headline h1 */
+.main-headline {
+  font-size: 5rem;
+  font-weight: var(--fw-medium);
+  line-height: 6.5rem;
+}
+
+
+/* Planet Info Copy */
+.planet-info-copy {
+  padding-top:1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5625rem;
+}
+
+
+/* Planet Source Container */
+.planet-src-container {
+  width: 9rem;
 }
 
 
 /* Fact Selection Container */
 .fact-selection-btns-container {
+  height: 11rem;
+  width: 21.875rem;
+  align-items: flex-start;
+  align-self: center;
+  justify-self: center;
+}
+
+
+/* Fact Selection Button */
+.selection-btn {
   width: 21.875rem;
 }
 
