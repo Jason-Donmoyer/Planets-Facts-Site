@@ -764,7 +764,7 @@ html {
 
 }
 
-
+/* ************************************************************************************** */
 /* Desktop */
 /* 769px */
 @media screen and (min-width: 1000px) {
@@ -773,6 +773,7 @@ html {
 /* Main-Content */
 /* grid container */
 .main-content {
+  padding-right: 11%;
   grid-template: 
     "planet-img planet-info"
     "planet-img fact-selection"
@@ -912,7 +913,8 @@ html {
 .planet-info-container {
   width: 20.375rem;
   margin: 0;
-  justify-self: center;
+  /* margin-right: 11%; */
+  justify-self: end;
   align-self: center;
 }
 
@@ -944,15 +946,66 @@ html {
 .fact-selection-btns-container {
   height: 11rem;
   width: 21.875rem;
+  /* margin-right: 11%; */
   align-items: flex-start;
   align-self: center;
-  justify-self: center;
+  justify-self: end;
 }
 
 
 /* Fact Selection Button */
 .selection-btn {
+  height: 3rem;
   width: 21.875rem;
+}
+
+
+/* Fact Selection Button Copy */
+.selection-btn-copy {
+  font-size: 0.75rem;
+  letter-spacing: 0.160714rem;
+}
+
+
+/* Selection Button Number */
+.selection-number {
+  margin-right: 1.5625rem;
+  margin-left: 1.75rem;
+}
+
+
+/* Planet Stats Container*/
+.planet-stats-container {
+  height: 8rem;
+  width: 89%;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  margin-left: 11%;
+  justify-self: center;
+}
+
+
+/* Planet Stat Container */
+.stat-container {
+  height: 8rem;
+  width: 22.5%;
+  padding-left: 1.4375rem;
+}
+
+
+/* Planet Stat Headline */
+.stat-headline {
+  font-size: 0.6875rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.0625rem;
+}
+
+
+/* Planet Stat Copy*/
+.stat-copy {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  letter-spacing: -0.09375rem;
 }
 
 
