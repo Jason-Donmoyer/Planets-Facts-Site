@@ -162,9 +162,50 @@ for (let i = 0; i < navBtnsArrLg.length; i++) {
   })
 }
 
-// // Change color of planet marker on Desktop
-navBtnsArrLg.forEach(btn => btn.id === `${mainHeadline}-nav-btn-lg` ? btn.children[0].classList.add('desktop-planet-color-active') : btn.children[0].classList.remove('desktop-planet-color-active'));
 
+// CHANGE TO MOUSEOVER EVENT -- create reusable function
+// // Change color of planet marker on Desktop
+// navBtnsArrLg.forEach(btn => btn.id === `${mainHeadline}-nav-btn-lg` ? btn.children[0].classList.add('desktop-planet-color-active') : btn.children[0].classList.remove('desktop-planet-color-active'));
+
+
+
+function colorBarHover(arr) {
+  arr.forEach(item => item.children[0].classList.remove(`${mainHeadline}-color`));
+  arr.forEach(item => item.children[0].classList.add(`${item.children[1].textContent.toLowerCase()}-color`));
+  for (let i = 0; i < arr.length; i++) {
+    arr[i].addEventListener('mouseenter', (e) => {
+      arr[i].children[0].classList.add('desktop-planet-color-active');
+      console.log(e.target.children[1].textContent.toLowerCase());
+    });
+    arr[i].addEventListener('mouseleave', () => {
+      arr[i].children[0].classList.remove('desktop-planet-color-active');
+    });
+  }
+}
+
+
+const selectinoBtnsContainer = [
+  overviewSelectionBtn,
+  structureSelectionBtn,
+  geologySelectionBtn
+];
+
+// function selectionBtnHover(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     arr[i].addEventListener('mouseenter', (e) => {
+//       if (!e.target.classList.contains('selection-btn-active')) {
+//         e.target.style.backgroundColor = 'rgba(216, 216, 216, 0.2)';
+//         // e.target.style.opacity = 0.2;
+//       }
+//     });
+//     arr[i].addEventListener('mouseleave', (e) => {
+//       if (!e.target.classList.contains('selection-btn-active')) {
+//         e.target.style.backgroundColor = '';
+//         // e.target.style.opacity = 0.2;
+//       }
+//     })
+//   }
+//}
 
 
 
@@ -233,6 +274,26 @@ geologySelectionBtn.addEventListener('click', () => {
   planetGeologyCopy.style.display = 'block';
 
 });
+
+
+// W3 Schools JS Media Queries Example 
+// function myFunction(x) {
+//   if (x.matches) { // If media query matches
+//     document.body.style.backgroundColor = "yellow";
+//   } else {
+//     document.body.style.backgroundColor = "pink";
+//   }
+// }
+
+// var x = window.matchMedia("(max-width: 700px)")
+// myFunction(x) // Call listener function at run time
+// x.addEventListener(myFunction) // Attach listener function on state changes
+
+
+
+
+colorBarHover(navBtnsArrLg);
+// selectionBtnHover(selectinoBtnsContainer);
 
 
 // Get data from API

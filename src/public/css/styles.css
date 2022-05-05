@@ -767,7 +767,7 @@ html {
 /* ************************************************************************************** */
 /* Desktop */
 /* 769px */
-@media screen and (min-width: 1275px) {
+@media screen and (min-width: 1000px) {
 
 
 /* Main-Content */
@@ -1006,6 +1006,24 @@ html {
   font-size: 2.5rem;
   line-height: 3.25rem;
   letter-spacing: -0.09375rem;
+}
+
+
+/* ****************************** */
+        /* ACTIVE STATES */
+/* ****************************** */
+
+
+/* Nav Buttons Hover */
+.nav-btn-copy:hover {
+  cursor: pointer;
+}
+
+
+/* Selection Buttons Hover */
+.selection-btn:hover {
+  cursor: pointer;
+  background-color: rgba(216, 216, 216, 0.2);
 }
 
 
