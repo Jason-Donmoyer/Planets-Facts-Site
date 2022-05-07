@@ -142,21 +142,28 @@
 
     <!-- Main Image Start -->
     <div id="planet-img-container" class="planet-img-container">
-      <div style="background-image:url(../public{{planetImg}})" id="planet-mercury-img" class="planet-img {{planetColor}}-img-size"></div>
+      <div style="background-image:url(../public{{planetImg}})" class="planet-img {{planetColor}}-img-size"></div>
     </div>
     <!-- Main Image End -->
 
     <!-- Planet Structure Image Start -->
     <div id="planet-structure-img-container" class="planet-img-container">
-      <div style="background-image:url(../public{{planetStructureImg}})" id="planet-mercury-img" class="planet-img {{planetColor}}-img-size"></div>
+      <div style="background-image:url(../public{{planetStructureImg}})" class="planet-img {{planetColor}}-img-size"></div>
     </div>
     <!-- Planet Structure Image End -->
 
     <!-- Planet Geology Image Start-->
     <div id="planet-geology-img-container" class="planet-img-container">
-      <div style="background-image:url(../public{{planetGeologyImg}})" id="planet-mercury-img" class="planet-img {{planetColor}}-img-size"></div>
+      <div style="background-image:url(../public{{planetGeologyImg}})" class="planet-img {{planetColor}}-img-size"></div>
     </div>
     <!-- Planet Geology Image End -->
+
+    <!-- Planet Geology Desktop Image Start-->
+    <div id="planet-geology-desktop-img-container" class="planet-img-container desktop-planet-img-container">
+      <div style="background-image:url(../public{{planetImg}})" class="planet-img {{planetColor}}-img-size"></div>
+      <div style="background-image:url(../public{{planetGeologyImg}})" class="planet-img geology-img-size"></div>
+    </div>
+    <!-- Planet Geology Desktop Image End -->
 
     <!-- Planet Information Start -->
     <article class="planet-info-container">
@@ -178,29 +185,6 @@
         <p id="planet-src-copy" class="src-copy">Source : <a href="{{planetSrc}}" target="_blank">Wikipedia</a> <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) --></p>
         <div class="arrow-icon"></div>
       </div>
-      
-
-      {{!-- <!-- Internal Structure Content Start -->
-      <p id="planet-structure-copy" class="planet-info-copy">{{planetStructure}}</p>
-      <!-- Internal Structure Content End -->
-      
-      <!-- Surface Geology Content Start -->
-      <p id="planet-surface-copy" class="planet-info-copy">{{planetGeology}}</p>
-      <!-- Surface Geology Content End --> --}}
-        {{!-- <div id="planet-structure-src-container" class="planet-src-container">
-          <p id="structure-src-copy" class="src-copy"></p>Source : <a href="{{planetSrc}}" target="_blank">Wikipedia</a><!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure --></p>
-          <div class="arrow-icon"></div>
-        </div>
-         --}}
-
-        <!-- Surface Geology Content Start -->
-        {{!-- <p id="planet-surface-copy" class="planet-info-copy">{{planetGeology}}</p>
-        <div id="planet-surface-src-container" class="planet-src-container">
-          <p id="surface-src-copy" class="src-copy">Source : <a href="{{planetGeologySrc}}" target="_blank">Wikipedia</a> <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology --></p>
-          <div class="arrow-icon"></div>
-        </div> --}}
-        <!-- Surface Geology Content End -->
-
     </article>
     <!-- Planet Information End -->
 
@@ -238,7 +222,6 @@
     </article>
 
   </main>
-  <!-- <button><a href="/mars">Press me</a></button> -->
-
+  
   <script src="../public/main.js"></script>
 </body>

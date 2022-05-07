@@ -20,6 +20,7 @@ const geologySelectionMarker = document.getElementById('geology-selection-marker
 const planetImg = document.getElementById('planet-img-container');
 const planetStructureImg = document.getElementById('planet-structure-img-container');
 const planetGeologyImg = document.getElementById('planet-geology-img-container');
+const desktopPlanetGeologyImg = document.getElementById('planet-geology-desktop-img-container');
 
 
 // Planet Info Containers
@@ -34,15 +35,6 @@ const mainHeadline = document.querySelector('.main-headline').textContent.toLowe
 
 // Planet Info links
 const planetSrc = document.getElementById('planet-src-copy');
-// const structureSrc = document.getElementById('structure-src-copy');
-// const geologySrc = document.getElementById('surface-src-copy');
-
-// let planetNumber = 0;
-
-const planetData = [];
-
-// Check to see if planet number is defined in localStorage
-// localStorage.getItem('planetNumber') ? planetNumber = localStorage.getItem('planetNumber') : planetNumber = 0;
 
 
 // Hamburger Menu Functions
@@ -96,19 +88,13 @@ const navBtnsArr = [
 
 // Add event listeners and store planet number to extract data from API
 for (let i = 0; i < navBtnsArr.length; i++) {
-  // console.log(navBtnsArr[i].children[0].children[1].textContent.toLowerCase());
   navBtnsArr[i].addEventListener('click', () => {
-    // planetNumber = i;
-    // localStorage.setItem('planetNumber', planetNumber);
-    // console.log(planetNumber);
     const link = document.createElement('a');
       if (`/${navBtnsArr[i].children[0].children[1].textContent.toLowerCase()}` === '/mercury') {
         link.href = '/';
-        // planetNumber = 0;
       } else {
         link.href = `/${navBtnsArr[i].children[0].children[1].textContent.toLowerCase()}`;
       }   
-      // localStorage.setItem('planetNumber', planetNumber);
       document.body.appendChild(link);
       link.click();
       link.remove();
@@ -142,20 +128,13 @@ const navBtnsArrLg = [
 
 // Add event listeners and store planet number to extract data from API for lg screen nav
 for (let i = 0; i < navBtnsArrLg.length; i++) {
-  // console.log(navBtnsArr[i].children[0].children[1].textContent.toLowerCase());
   navBtnsArrLg[i].addEventListener('click', () => {
-    
-    // planetNumber = i;
-    // localStorage.setItem('planetNumber', planetNumber);
-    // console.log(planetNumber);
     const link = document.createElement('a');
       if (`/${navBtnsArrLg[i].children[1].textContent.toLowerCase()}` === '/mercury') {
         link.href = '/';
-        // planetNumber = 0;
       } else {
         link.href = `/${navBtnsArrLg[i].children[1].textContent.toLowerCase()}`;
       }   
-      // localStorage.setItem('planetNumber', planetNumber);
       document.body.appendChild(link);
       link.click();
       link.remove();
@@ -163,12 +142,7 @@ for (let i = 0; i < navBtnsArrLg.length; i++) {
 }
 
 
-// CHANGE TO MOUSEOVER EVENT -- create reusable function
-// // Change color of planet marker on Desktop
-// navBtnsArrLg.forEach(btn => btn.id === `${mainHeadline}-nav-btn-lg` ? btn.children[0].classList.add('desktop-planet-color-active') : btn.children[0].classList.remove('desktop-planet-color-active'));
-
-
-
+// Change navbar color on mouseenter
 function colorBarHover(arr) {
   arr.forEach(item => item.children[0].classList.remove(`${mainHeadline}-color`));
   arr.forEach(item => item.children[0].classList.add(`${item.children[1].textContent.toLowerCase()}-color`));
@@ -190,25 +164,6 @@ const selectinoBtnsContainer = [
   geologySelectionBtn
 ];
 
-// function selectionBtnHover(arr) {
-//   for (let i = 0; i < arr.length; i++) {
-//     arr[i].addEventListener('mouseenter', (e) => {
-//       if (!e.target.classList.contains('selection-btn-active')) {
-//         e.target.style.backgroundColor = 'rgba(216, 216, 216, 0.2)';
-//         // e.target.style.opacity = 0.2;
-//       }
-//     });
-//     arr[i].addEventListener('mouseleave', (e) => {
-//       if (!e.target.classList.contains('selection-btn-active')) {
-//         e.target.style.backgroundColor = '';
-//         // e.target.style.opacity = 0.2;
-//       }
-//     })
-//   }
-//}
-
-
-
 
 // Planet facts selection Buttons event listeners
 overviewSelectionBtn.addEventListener('click', () => {
@@ -224,11 +179,13 @@ overviewSelectionBtn.addEventListener('click', () => {
   planetImg.style.display = 'flex';
   planetStructureImg.style.display = 'none';
   planetGeologyImg.style.display = 'none';
+  desktopPlanetGeologyImg.style.display = 'none';
 
   // planet info copy
   planetOverviewCopy.style.display = 'block';
   planetStructureCopy.style.display = 'none';
   planetGeologyCopy.style.display = 'none';
+  desktopPlanetGeologyImg.style.display = 'none';
 
 });
 
@@ -245,13 +202,14 @@ structureSelectionBtn.addEventListener('click', () => {
   planetImg.style.display = 'none';
   planetStructureImg.style.display = 'flex';
   planetGeologyImg.style.display = 'none';
+  desktopPlanetGeologyImg.style.display = 'none';
 
 
   // planet info copy
   planetOverviewCopy.style.display = 'none';
   planetStructureCopy.style.display = 'block';
   planetGeologyCopy.style.display = 'none';
-
+  desktopPlanetGeologyImg.style.display = 'none';
 });
 
 geologySelectionBtn.addEventListener('click', () => {
@@ -266,8 +224,14 @@ geologySelectionBtn.addEventListener('click', () => {
   // planet images
   planetImg.style.display = 'none';
   planetStructureImg.style.display = 'none';
-  planetGeologyImg.style.display = 'flex';
+  var x = window.matchMedia("(min-width: 1000px)")
+  if (x.matches) {
+    desktopPlanetGeologyImg.style.display = 'flex';
+  } else {
+    planetGeologyImg.style.display = 'flex';
+  }
 
+  
   // planet info copy
   planetOverviewCopy.style.display = 'none';
   planetStructureCopy.style.display = 'none';
@@ -276,41 +240,7 @@ geologySelectionBtn.addEventListener('click', () => {
 });
 
 
-// W3 Schools JS Media Queries Example 
-// function myFunction(x) {
-//   if (x.matches) { // If media query matches
-//     document.body.style.backgroundColor = "yellow";
-//   } else {
-//     document.body.style.backgroundColor = "pink";
-//   }
-// }
-
-// var x = window.matchMedia("(max-width: 700px)")
-// myFunction(x) // Call listener function at run time
-// x.addEventListener(myFunction) // Attach listener function on state changes
-
-
-
-
 colorBarHover(navBtnsArrLg);
-// selectionBtnHover(selectinoBtnsContainer);
-
-
-// Get data from API
-// async function getData() {
-//   const res = await fetch('http://localhost:3000/data')
-//   .then(res => res.json())
-//   .then(data => {
-//     console.log(data)
-//     for (let i in data) {
-//       planetData.push(data[i]);
-//     }
-//     // let planetNumber = 0;
-//     console.log(planetData[planetNumber].overview.content);
-//   });
-// }
-
-//getData();
 
 
 

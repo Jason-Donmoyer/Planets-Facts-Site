@@ -182,12 +182,9 @@ html {
 }
 
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!SSUE */
-
 /* ****************** */
 /* PLANET COLORS AND SIZES */
 
-/* CHANGE TO .<planet>-color */
 /* Mercury */
 .mercury-color {
   background-color: var(--cyan);
@@ -289,13 +286,9 @@ html {
 }
 
 
-/* MAIN CONTENT */
-
-
-/* main */
-/* .main-content {
-  
-} */
+/* ****************** */
+  /* MAIN CONTENT */
+/* ****************** */
 
 
 /* Fact Selection Buttons Container */
@@ -365,6 +358,7 @@ html {
 
 
 /* PLANET IMG TEST */
+#planet-geology-desktop-img-container,
 #planet-geology-img-container,
 #planet-structure-img-container {
   display: none;
@@ -389,11 +383,14 @@ html {
   background-position: center;
 }
 
-/* REMOVE */
-/* Mercury Img */
-/* .mercury-img {
-  background-image: url(../../public/assets/planet-mercury.svg);
-} */
+
+/* Geology Img Size */
+.geology-img-size {
+  height: 12.4375rem;
+  width: 10.1875rem;
+  position: absolute;
+  bottom: -3.75rem;
+}
 
 
 /* Planet Info Container */
